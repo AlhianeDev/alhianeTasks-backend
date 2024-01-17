@@ -1,0 +1,45 @@
+type TodoDto {
+
+    id: ID!
+
+    todoTitle: String!
+
+    todoDesc: String!
+
+    createdAt: DateTime
+
+    updatedAt: DateTime
+
+    isConfirmed: Boolean!
+
+}
+
+type Connection {
+
+    totalTodos: Int!
+
+    edges: [TodoEdge]
+
+    pageInfo: PageInfo!
+
+}
+
+type TodoEdge {
+
+    cursor: String
+
+    node: TodoDto!
+
+}
+
+type PageInfo {
+
+    startCursor: String
+
+    endCursor: String
+
+    hasPreviousPage: Boolean!
+
+    hasNextPage: Boolean!
+
+}

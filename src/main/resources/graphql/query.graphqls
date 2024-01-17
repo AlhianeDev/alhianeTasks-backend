@@ -1,0 +1,13 @@
+type Query {
+
+    findTodoById(todoId: ID!): TodoDto!
+
+    findAllTodos: [ TodoDto! ]!
+
+    findTodos(
+
+        first: Int, after: String, last: Int, before: String, skip: Int
+
+    ): Connection
+
+}

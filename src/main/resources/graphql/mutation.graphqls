@@ -1,0 +1,11 @@
+type Mutation {
+
+    createTodo(todoInput: TodoInput!): TodoDto!
+
+    updateTodoById(todoInput: TodoInput!): TodoDto!
+
+    deleteTodoById(todoId: ID!): String
+
+    confirmTodoById(todoId: ID!): Boolean
+
+}

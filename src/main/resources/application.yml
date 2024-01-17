@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/alhianeTasks
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  graphql:
+    schema:
+      printer:
+        enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQLDialect
+graphql:
+  servlet:
+    exception-handlers-enabled: true
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+  extended-scalars: DateTime

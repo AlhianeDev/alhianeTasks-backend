@@ -1,0 +1,9 @@
+input TodoInput {
+
+    id: ID
+
+    todoTitle: String!
+
+    todoDesc: String!
+
+}
